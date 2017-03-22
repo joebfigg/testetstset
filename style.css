@@ -1,33 +1,161 @@
-p, h2, h3, h4{
-    color: azure;
+/* Normalize */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-p{
-    font-size: 1.25em;
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+html{
+    font-family: 'Fira Sans', sans-serif;
 }
 
-a{
-    text-decoration: none;
+.signature{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5em;
+    color: white;
+    z-index: 5;
+    margin-top: 6em;
 }
 
-.contact a{
-    color:#FF4BA8;
-    margin-left: 4px;
+.cap1{
+  font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: white;
+    z-index: 5;
+    margin-top: 1em;
 }
 
-body{
-    background: #000;
+header{
+    background-image: url(img/bg2.jpg);
+    background-size: 100% 100%;
+    border-style: groove;
+    border-width: 1em;
+    border-color: slategrey;
+    height: 700px;
+}
+
+body {
+    height: 100%;
+    background: green;
     background: url(img/bg1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.page-wrapper{
-    width: 1200px;
+.page-wrapper-port{
+    background: url(img/cbloxx.jpg);
+    background-size: 100% 100%;
+    height: 1600px;
+    border-style: groove;
+    border-width: 1em;
+    border-color: slategrey;
+    height: 600px;
+    width: 80%;
+    margin: 1em auto;
+    overflow: scroll;
+}
+
+.page-wrapper1{
+    background: url(img/deadgirl.png);
+    background-size:70% 100%;
+    background-position: center;
+    height: 1600px;
+    border-style: groove;
+    border-width: 1em;
+    border-color: slategrey;
+    height: 600px;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.page-wrapper-index{
+    background: url(img/girl1.jpg);
+    background-size: 100% 100%;
+    height: 1600px;
+    border-style: groove;
+    border-width: 1em;
+    border-color: slategrey;
+    height: 600px;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.about{
+    background: rgba(255,0,0,.5);
+    border: groove;
+    margin: 1em 1em;
+    width: 40%;
+    height: 90%;
+    float: right;
+    overflow: scroll;
+}
+
+.about p{
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.about h2{
+    font-size: 2em;
     margin: 0 auto;
-    border: 3px solid white;
-    background: #000;
     text-align: center;
 }
+
+
+
+/* just for funsies */
+
 
 @keyframes shadow {
 	from { text-shadow: 0 0 #FF4BA8; }
@@ -35,8 +163,8 @@ body{
 }
 
 @keyframes color {
-	from { color: #00E5F8; }
-	to { color: #0CACA6; }
+	from { color: whitesmoke; }
+	to { color: cadetblue; }
 }
 
 @keyframes rotation {
@@ -44,161 +172,269 @@ body{
 	to { transform: rotate(2deg); }
 }
 
-.title1{
-    font-size: 10em;
-    animation-name: shadow, color;
+.pc{
+    font-size: 3em;
+    animation-name: shadow, rotation, color;
 	animation-duration: 2s, 1s, 3s;
 	animation-timing-function: ease-in, ease-out, ease-in-out;
 	animation-iteration-count: infinite;
   animation-direction: alternate;
-  text-shadow: 0 0 green;
     margin: 0 auto;
-    padding: 0;
+    padding: .3em;
     position: relative;
-    top: 1em;
+    top: 16px;
     z-index: 5;
+    text-align: center;
 }
 
 
 
-.sky {
+
+/* Form */
+
+
+form {
+    margin: 4em auto;
+    width: 343px;
+    height: 333px;
+    padding:30px;
+    border: 1px solid rgba(0,0,0,.6);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.8); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+}
+
+textarea{
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px; 
+    width: 276px;
+    height: 110px;
+    border: 1px solid rgba(255,255,255,.6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:18px;
+    color:#fff;
+    padding-left:15px;
+    padding-right:60px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+input {
+    width: 276px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:18px;
+    color:#fff;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+
+input[type=submit] {
+    cursor:pointer;
+}
+
+input.name {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; 
+	  padding-left:15px;
+      padding-right: 47px;
+}
+
+input.email {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;
+	  padding-left:15px;
+      padding-right: 47px;
+}
+
+input.message {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;
+      padding-right: 45px;
+}
+
+::-webkit-input-placeholder {
+	  color: #fff;
+}
+
+:-moz-placeholder{ 
+    color: #fff; 
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {  
+	  color: #fff; 
+}
+
+input:focus, textarea:focus { 
+	  background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	  overflow: hidden; 
+}
+
+.btn {
+	  width: 138px;
+	  height: 44px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  border-radius: 4px;
+	  float:right;
+    border: 1px solid #253737;
+    background: cadetblue;
+    padding: 10.5px 21px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+    color: #e1e1e1;
+}
+
+.btn:hover {
+    background: mediumvioletred;
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    color: #fff;
+ }
+
+.btn:active {
+    background-color: mediumvioletred;
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+   }
+
+
+
+
+
+
+
+
+/* portfolio */
+
+main{
   display: flex;
-  flex-grow: 1;
-  background-color: black;
-  height: 375px;
-  overflow: hidden;
+  flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+  margin: 1em 1em;
+  background: #333;
+  border-radius: 5px;
+  color: #fff;
+  padding: .5em;
+  width: 200px;
+  height: 300px;
+}
+
+.tab{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1em;
+}
+
+.fullsize{
+    width: 600px;
+    height: 450px;
+}
+/* overlay-1 */
+
+/* Fullsize Overlay/Lightbox/Modal */
+/* Hide It */
+.overlay {
+  display: none;
+  
+  /* Overlay Styling */
+  background: rgba(0,0,0,.25);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  
+}
+
+/* Show It */
+.overlay:target {
+  display: block;
+  
+  /* Contents of Overlay */
+  display: flex;
+  flex-direction: column;
+  
   justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-
-.sun {
-  height: 250px;
-  width: 250px;
-  border-radius: 100%;
-  background: linear-gradient(180deg, #e89b33, #fd0c05);
-  background-size: 400% 400%;
-  -webkit-box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-  -moz-box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-  box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-  margin-top: 150px;
-  animation: sun-pulse 6s infinite, sun-color 2s infinite;
-}
-
-
-.trees {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225473/palm-tree-2.png');
-  height: 96px;
-  width: 57vw;
-  position: absolute;
-  top: 303px;
-  right: 0;
-  animation: scroll-across-right 4s infinite linear;
-  z-index: -1;
-}
-
-.trees-reverse {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225473/palm-tree-2.png');
-  height: 96px;
-  width: 57vw;
-  position: absolute;
-  top: 303px;
-  left: 0;
-  animation: scroll-across-left 4s infinite linear;
-  z-index: -1;
-}
-
-.trees-bg {
-  height: 296px;
-  width: 120vw;
-  position: absolute;
-  top: 103px;
-  left: -40px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(217, 156, 156, 0) 39%, rgba(163, 13, 13, 1) 95%, rgba(158, 0, 0, 1) 100%);
-}
-
-
-@keyframes scroll-across-left {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-280px)
-  }
-}
-
-@keyframes scroll-across-right {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(280px)
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(40px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes sun-pulse {
-  0% {
-    -webkit-box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-    -moz-box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-    box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-  }
-  50% {
-    -webkit-box-shadow: 0px 0px 77px 10px rgba(232, 155, 51, 1);
-    -moz-box-shadow: 0px 0px 77px 10px rgba(232, 155, 51, 1);
-    box-shadow: 0px 0px 77px 10px rgba(232, 155, 51, 1);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-    -moz-box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-    box-shadow: 0px 0px 77px 10px rgba(253, 13, 5, 1);
-  }
-}
-
-@keyframes sun-color {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-
+  align-items: center;  
   
+  min-height: 50vh;
   
+  /* Animation */
+  animation: fadeish 1s;
+  
+}
+
+/* EXTRA STYLING */
+.overlay img {
+  border: 10px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #333;
+}
+
+
+@keyframes fadeish {
+  0% { 
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+/* nav */
 
 .l1 {
-  color: cyan;
-  font-family: 'Cantarell', sans-serif;
-  font-size: 3em;
+  color: cadetblue;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2em;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -253,8 +489,8 @@ body{
 	display: flex;
 	width: 100%;
 	background-color: #333333;
-	border-top: 5px solid white;
-	border-bottom: 5px solid white;
+	border-top: 5px solid grey;
+	border-bottom: 5px solid grey;
 }
 
 
@@ -266,130 +502,3 @@ body{
 
 
 
-h4{
-    font-size: 1.5em;
-}
-
-h3{
-    font-size: 2em;
-    color: #6bb2ae;
-    text-shadow: 1px 1px 0 #FF4BA8;
-}
-
-h2{
-    font-size: 3em;
-    font-family: 'Cantarell', sans-serif;;
-    color: #6bb2ae;
-    text-shadow: 1px 1px 0 #FF4BA8;
-    text-decoration: underline;
-}
-
-
-
-
-
-.about{
-    text-align: center;
-    margin: 100px;
-}
-
-.about p{
-    font-size: 1.5em;
-    text-align: center;
-    margin: 100px;
-}
-
-.work{
-    text-align: center;
-}
-
-.portfolio{
-    margin-top: 8em;
-    text-align: center;
-}
-
-.ex1{
-    margin-top: 3em;
-}
-
-.ex2{
-    margin-top: 3em;
-}
-
-.ex3{
-    margin-top: 3em;
-}
-
-.ex4{
-    margin-top: 3em;
-}
-
-.ex5{
-    margin-top: 3em;
-}
-
-
-
-/* carousel */
-
-
-.container{
-	margin: 4% auto;
-	width: 210px;
-	height: 140px;
-	position: relative;
-	perspective: 1000px;
-}
-#carousel{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform-style: preserve-3d;
-	animation: rotation 20s infinite linear;
-}
-#carousel:hover{
-	animation-play-state: paused;
-}
-#carousel figure{
-	display: block;
-	position: absolute;
-	width: 186px;
-	height: 116px;
-	left: 10px;
-	top: 10px;
-	background: black;
-	overflow: hidden;
-	border: solid 5px black;
-}
-#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
-#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
-#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
-#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
-#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
-#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
-#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
-#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
-#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
-
-img{
-	-webkit-filter: grayscale(1);
-	cursor: pointer;
-	transition: all .5s ease;
-}
-img:hover{
-	-webkit-filter: grayscale(0);
-  transform: scale(1.2,1.2);
-}
-
-@keyframes rotation{
-	from{
-		transform: rotateY(0deg);
-	}
-	to{
-		transform: rotateY(360deg);
-	}
-}
-
-figure img{
-    width: 200px;
-}
