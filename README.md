@@ -2,17 +2,16 @@
 My Website
 
 
-HotLine Miami style code and art direction was forked from the below users and heavily modified to fit my portfolio.
+HotLine Miami style code was forked from the below users and heavily modified to fit my portfolio.
 
-Will Moore - http://codepen.io/mors/pen/wkFxl - for code animation in Nav bar
+Will Moore - http://codepen.io/mors/pen/wkFxl - for animated Text
 
-Tumas - http://codepen.io/entumas/pen/pgPmKL - For Title Header Animation and Navigation Bar background
-
-Nick Busman - http://codepen.io/nmbusman/pen/oLybYW - For Hero Div Background and animation and Font Styling of h2 headers
+Tumas - http://codepen.io/entumas/pen/pgPmKL - For Navigation Bar
 
 
-Portfolio carousel was forked from the below user and modified to fit my portfolio.
 
-Bobby - http://codepen.io/ImBobby/pen/uKbnl
+Form was forked from 
+
+https://codepen.io/luismruiz/pen/hvgey
 
 
