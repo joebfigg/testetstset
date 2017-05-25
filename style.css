@@ -96,7 +96,7 @@ body {
 }
 
 .page-wrapper-port{
-    background: url(img/cbloxx.jpg);
+    background: linear-gradient(#FF4BA8, #6D0B13);
     background-size: 100% 100%;
     height: 80vh;
     border-style: groove;
@@ -108,7 +108,7 @@ body {
 }
 
 .page-wrapper1{
-    background: url(img/deadgirl.png) no-repeat;
+    background: linear-gradient(#FF4BA8, #6D0B13);
     background-size:100% 100%;
     background-position: center;
     height: 80vh;
@@ -133,11 +133,11 @@ body {
 }
 
 .about{
-    background: rgba(255,0,0,.5);
+    background: linear-gradient(#FF4BA8, #6D0B13);
     border: groove;
     margin: 2em;
-    width: 45%;
-    height: 93%;
+    width: 90%;
+    height: 88%;
     float: right;
     overflow: scroll;
 }
@@ -374,13 +374,13 @@ figure {
   color: #fff;
   padding: .5em;
   width: 200px;
-  height: 300px;
+  height: 425px;
 }
 
 .tab{
-    width: 150px;
+    width: 175px;
     height: 150px;
-    margin-bottom: 1em;
+    margin: auto auto 1em .73em;
 }
 
 .fullsize{
